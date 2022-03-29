@@ -1,4 +1,4 @@
-package com.epa.composenews.ui
+package com.epa.composenews.ui.common
 
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
