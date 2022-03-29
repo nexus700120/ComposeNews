@@ -4,14 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.platform.ComposeView
 import androidx.fragment.app.Fragment
 import com.epa.composenews.NewsRepository
-import com.epa.composenews.viewModel
-import androidx.compose.runtime.getValue
-import androidx.compose.ui.platform.LocalContext
 import com.epa.composenews.ui.theme.ComposeNewsTheme
+import com.epa.composenews.viewModel
 
 class NewsListFragment : Fragment() {
 
@@ -25,7 +22,6 @@ class NewsListFragment : Fragment() {
         return ComposeView(requireContext()).apply {
             setContent {
                 ComposeNewsTheme() {
-                    val context = LocalContext.current
                     NewsScreen(viewModel)
                 }
             }
